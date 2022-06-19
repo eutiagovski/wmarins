@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .header-container {
+    background-color: var(--color-background);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      color: #a5a1a1;
+      font-family: "New Order", sans-serif;
+      font-size: 26px;
+      font-style: normal;
+      font-weight: normal;
+      display: flex;
+      .purple {
+        color: #885898;
+        font-family: "New Order", sans-serif;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: normal;
+      }
+    }
+  }
+}
