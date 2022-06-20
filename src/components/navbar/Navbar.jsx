@@ -35,17 +35,14 @@ const Navbar = () => {
           <span>ARQUITETURA E INTERIORES</span>
         </div>
         <div className="right">
-          <a className="link" href="#home">
-            HOME
+          <a href="/#home" className="link">
+            <Link className="link" to="/"></Link>HOME
           </a>
-          <a className="link" href="#home">
-            SOBRE
+          <a href="/#portfolio" className="link">
+            <Link className="link" to="/"></Link>PORTFOLIO
           </a>
-          <a className="link" href="#portfolio">
-            PORTFÓLIO
-          </a>
-          <a href="/#contato">
-            <div className="link">CONTATO</div>
+          <a href="/#contato" className="link">
+            <Link className="link" to="/"></Link>CONTATO
           </a>
           <div
             className="link responsive"
@@ -69,19 +66,19 @@ const Navbar = () => {
               }}
             >
               <MenuItem onClick={handleClose}>
-                <a className="link" href="#home">
-                  SOBRE
-                </a>
+              <a href="/#home" className="link">
+            <Link className="link" to="/"></Link>HOME
+          </a>
               </MenuItem>
               <MenuItem onClick={handleClose}>
-                <a className="link" href="#portfolio">
-                  PORTFÓLIO
-                </a>
+              <a href="/#portfolio" className="link">
+            <Link className="link" to="/"></Link>PORTFOLIO
+          </a>
               </MenuItem>
               <MenuItem onClick={handleClose}>
-                <a className="link" href="#contato">
-                  CONTATO
-                </a>
+              <a href="/#contato" className="link">
+            <Link className="link" to="/"></Link>CONTATO
+          </a>
               </MenuItem>
             </Menu>
           </div>

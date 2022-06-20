@@ -6,7 +6,7 @@ import Navbar from "./components/navbar/Navbar";
 
 import Footer from "./components/footer/Footer";
 import Home from "./pages/home/Home";
-import Projects from "./pages/projects/Projects";
+import ProjectDetails from "./pages/projects/ProjectDetails";
 import About from "./pages/about/About";
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/old" element={<Old />} />
             <Route path="/projetos">
-              <Route path="" element={<Projects />} />
+              <Route path=":id" element={<ProjectDetails />} />
             </Route>
             <Route path="/sobre" element={<About  />} />
           </Route>
