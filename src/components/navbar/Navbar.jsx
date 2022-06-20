@@ -35,15 +35,15 @@ const Navbar = () => {
           <span>ARQUITETURA E INTERIORES</span>
         </div>
         <div className="right">
-          <Link className="link" to="/#">
+          <a className="link" href="#home">
             HOME
-          </Link>
-          <Link className="link" to="/sobre">
+          </a>
+          <a className="link" href="#home">
             SOBRE
-          </Link>
-          <Link className="link" to="/projetos">
+          </a>
+          <a className="link" href="#portfolio">
             PORTFÓLIO
-          </Link>
+          </a>
           <a href="/#contato">
             <div className="link">CONTATO</div>
           </a>

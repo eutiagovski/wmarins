@@ -15,7 +15,7 @@ const Portfolio = () => {
   const itemData = [
     {
       img: "casa-0.jpeg",
-      title: "Residência Marins",
+      title: "Residência NM",
     },
     {
       img: "clinica-2.jpeg",
@@ -36,7 +36,7 @@ const Portfolio = () => {
     },
     {
       img: "casa-1.jpeg",
-      title: "Residência Marins",
+      title: "Residência NM",
     },
     {
       img: "escritorio-3.png",
@@ -74,7 +74,7 @@ const Portfolio = () => {
 
     {
       img: "casa-2.jpeg",
-      title: "Residência Marins",
+      title: "Residência NM",
     },
     {
       img: "escritorio-6.png",
@@ -82,11 +82,11 @@ const Portfolio = () => {
     },
     {
       img: "casa-3.jpeg",
-      title: "Residência Marins",
+      title: "Residência NM",
     },
     {
       img: "casa-4.jpeg",
-      title: "Residência Marins",
+      title: "Residência NM",
     },
   ];
   console.log(window.innerHeight);
