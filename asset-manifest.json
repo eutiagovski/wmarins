@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.366283f4.css",
-    "main.js": "/static/js/main.005fe24a.js",
+    "main.css": "/static/css/main.7106141f.css",
+    "main.js": "/static/js/main.86cd3b8c.js",
     "static/media/escritorio-1.png": "/static/media/escritorio-1.0a0e075408fe5c1ce6be.png",
     "static/media/escritorio-0.png": "/static/media/escritorio-0.ee770cc69d20d0fedf53.png",
     "static/media/cores-1.png": "/static/media/cores-1.4b74ef7cc333cd0677a3.png",
@@ -27,11 +27,11 @@
     "static/media/logo-0.png": "/static/media/logo-0.61813d9e191ce9bed9b7.png",
     "static/media/logo_wallace_marins_ASSINATURA1.png": "/static/media/logo_wallace_marins_ASSINATURA1.9d6c3ce23fcb4b933bbe.png",
     "index.html": "/index.html",
-    "main.366283f4.css.map": "/static/css/main.366283f4.css.map",
-    "main.005fe24a.js.map": "/static/js/main.005fe24a.js.map"
+    "main.7106141f.css.map": "/static/css/main.7106141f.css.map",
+    "main.86cd3b8c.js.map": "/static/js/main.86cd3b8c.js.map"
   },
   "entrypoints": [
-    "static/css/main.366283f4.css",
-    "static/js/main.005fe24a.js"
+    "static/css/main.7106141f.css",
+    "static/js/main.86cd3b8c.js"
   ]
 }
