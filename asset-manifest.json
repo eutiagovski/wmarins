@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.7106141f.css",
-    "main.js": "/static/js/main.ea1ced69.js",
+    "main.css": "/static/css/main.3a7524e7.css",
+    "main.js": "/static/js/main.16f09bf8.js",
     "static/media/escritorio-1.png": "/static/media/escritorio-1.0a0e075408fe5c1ce6be.png",
+    "static/media/escritorio-7.png": "/static/media/escritorio-7.056babdf99965b63f4a3.png",
     "static/media/escritorio-0.png": "/static/media/escritorio-0.ee770cc69d20d0fedf53.png",
     "static/media/cores-1.png": "/static/media/cores-1.4b74ef7cc333cd0677a3.png",
     "static/media/cores-0.png": "/static/media/cores-0.50741655c0af3272bc21.png",
@@ -19,19 +20,22 @@
     "static/media/casa-2.jpeg": "/static/media/casa-2.7cca53910f485c5d6ec0.jpeg",
     "static/media/clinica-6.jpeg": "/static/media/clinica-6.2e64439740c5314ae5d0.jpeg",
     "static/media/casa-0.jpeg": "/static/media/casa-0.151edd59f617b77ff078.jpeg",
+    "static/media/casa-5.jpeg": "/static/media/casa-5.f5961007f2349af2a70b.jpeg",
     "static/media/clinica-0.jpeg": "/static/media/clinica-0.73ff2f8be010d0436958.jpeg",
     "static/media/casa-4.jpeg": "/static/media/casa-4.d9dbe4b24c437af2a023.jpeg",
     "static/media/clinica-5.jpeg": "/static/media/clinica-5.6f5a3fff45a135bd4306.jpeg",
+    "static/media/casa-6.jpeg": "/static/media/casa-6.b8c7765a96c479b79f83.jpeg",
+    "static/media/casa-7.jpeg": "/static/media/casa-7.3beddd8a2919101efe13.jpeg",
     "static/media/clinica-3.jpeg": "/static/media/clinica-3.6e228facfc0039693e73.jpeg",
     "static/media/logo_wallace_marins_ASSINATURA2.png": "/static/media/logo_wallace_marins_ASSINATURA2.b2a12b6c5d74d7f479ef.png",
     "static/media/logo-0.png": "/static/media/logo-0.61813d9e191ce9bed9b7.png",
     "static/media/logo_wallace_marins_ASSINATURA1.png": "/static/media/logo_wallace_marins_ASSINATURA1.9d6c3ce23fcb4b933bbe.png",
     "index.html": "/index.html",
-    "main.7106141f.css.map": "/static/css/main.7106141f.css.map",
-    "main.ea1ced69.js.map": "/static/js/main.ea1ced69.js.map"
+    "main.3a7524e7.css.map": "/static/css/main.3a7524e7.css.map",
+    "main.16f09bf8.js.map": "/static/js/main.16f09bf8.js.map"
   },
   "entrypoints": [
-    "static/css/main.7106141f.css",
-    "static/js/main.ea1ced69.js"
+    "static/css/main.3a7524e7.css",
+    "static/js/main.16f09bf8.js"
   ]
 }
