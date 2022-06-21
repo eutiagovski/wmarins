@@ -10,11 +10,14 @@
         padding: 40px;
 
         .project-title {
-          font-size: 42px;
-          font-weight: bold;
-          color: #999;
           padding-bottom: 20px;
           padding-top: 10px;
+          color: #885898;
+          font-family: "New Order", sans-serif;
+          font-size: 38px;
+          font-style: normal;
+          font-weight: normal;
+          text-align: left;
         }
         .project-description {
           font-size: 16px;
@@ -56,7 +59,7 @@
         .left {
           padding: 20px;
         }
-        .right{
+        .right {
           display: flex;
           align-items: center;
           justify-content: center;

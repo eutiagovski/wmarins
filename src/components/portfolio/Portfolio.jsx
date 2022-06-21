@@ -1,11 +1,12 @@
 import "./portfolio.scss";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { portfolio } from "./portfolioList";
 
 const Portfolio = () => {
+  const navigate = useNavigate()
   const [imagesList, setImagesList] = useState([]);
   const [width, setWidth] = useState(window.innerWidth);
   const updateDimensions = () => {
@@ -26,6 +27,11 @@ const Portfolio = () => {
     setImagesList(listImages);
   }, []);
 
+  const handleNavigate = (id) => {
+    console.log(id)
+    navigate(`/projetos/${id}`)
+  };
+
   return (
     <div className="portfolio" id="portfolio">
       <div className="portfolio-container">
@@ -45,14 +51,12 @@ const Portfolio = () => {
                       src={`${require(`../../public/img/${item.img}`)}?w=248&fit=crop&auto=format`}
                       srcSet={`${require(`../../public/img/${item.img}`)}?w=248&fit=crop&auto=format&dpr=2 2x`}
                       alt={item.title}
-                      loading="lazy"
+                      // loading="lazy"
                     />
-                    <Link to={`/projetos/${item.id}/`} item={item}>
-                      <div className="img-overlay">
+                   <div className="img-overlay" onClick={e => handleNavigate(item.id)}>
                         <div className="img-title">{item.title}</div>
                         <div className="img-description">Ver mais</div>
                       </div>
-                    </Link>
                   </ImageListItem>
                 ))}
           </ImageList>

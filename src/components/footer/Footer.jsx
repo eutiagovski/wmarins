@@ -19,7 +19,7 @@ const Footer = () => {
             <span>
               <strong>CONTATO</strong>
             </span>
-            <span>Contato: 21 96489-6308</span>
+            <span>Telefone: 21 96489-6308</span>
             <span>E-mail: w.marins@outlook.com</span>
             <span>
               Vargem Grande, Rio de Janeiro - RJ

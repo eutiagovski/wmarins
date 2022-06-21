@@ -3,23 +3,26 @@ import "./projects.scss";
 import { portfolio } from "../../components/portfolio/portfolioList";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
+import { useNavigate } from "react-router-dom";
 
 const ProjectDetails = () => {
   const pageId = window.location.href.split("/")[4];
   const details = portfolio.filter((portfolio) => portfolio.id == pageId)[0];
+  const navigate = useNavigate();
 
 
   const handleForward = (e) => {
     e.preventDefault();
-    window.location.href = `/projetos/${ parseInt(pageId) + 1}/`;
+    navigate(`/projetos/${ parseInt(pageId) + 1}`)
   }
   const handleBackwards = (e) => {
     e.preventDefault();
-    window.location.href = `/projetos/${ parseInt(pageId) - 1}/`;
+    navigate(`/projetos/${ parseInt(pageId) - 1}`)
   }
-  console.log(portfolio.length)
+  document.body.scrollTop = 0;
+
   return (
-    <div className="projects">
+    <div className="projects" id='details'>
       <div className="projects-container">
         <div className="top"></div>
         <div className="bottom">
@@ -28,7 +31,7 @@ const ProjectDetails = () => {
             <div className="project-description">{details.text} </div>
           </div>
           <div className="center">
-            {details.images.map((image, index) => (
+            {details.images.sort(()=> Math.random() - .1).map((image, index) => (
               <img
                 src={`${require(`../../public/img/${image.path}`)}`}
                 alt=""

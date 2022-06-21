@@ -10,6 +10,9 @@ export const portfolio = [
       { path: "casa-2.jpeg" },
       { path: "casa-3.jpeg" },
       { path: "casa-4.jpeg" },
+      { path: "casa-5.jpeg" },
+      { path: "casa-6.jpeg" },
+      { path: "casa-7.jpeg" },
     ],
   },
   {
@@ -38,6 +41,7 @@ export const portfolio = [
         { path: "escritorio-4.png"},
         { path: "escritorio-5.png"},
         { path: "escritorio-6.png"},
+        { path: "escritorio-7.png"},
     ]
   },
   {

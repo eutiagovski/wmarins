@@ -22,7 +22,8 @@ const Navbar = () => {
     <div className="navbar">
       <div className="navbar-container">
         <div className="left">
-          <a href="/#home">
+          <a href="/#home" className="link">
+            <Link className="link" to="/"></Link>{" "}
             <img
               src={require(`../../public/img/logo-0.png`)}
               alt=""
@@ -39,11 +40,11 @@ const Navbar = () => {
             <Link className="link" to="/"></Link>HOME
           </a>
           <a href="/#portfolio" className="link">
-            <Link className="link" to="/"></Link>PORTFOLIO
+            <Link className="link" to="/"></Link>PORTFÓLIO
           </a>
           <a href="/#contato" className="link">
-            <Link className="link" to="/"></Link>CONTATO
-          </a>
+                  <Link className="link" to="/"></Link>CONTATO
+                </a>
           <div
             className="link responsive"
             id="basic-button"
@@ -66,19 +67,19 @@ const Navbar = () => {
               }}
             >
               <MenuItem onClick={handleClose}>
-              <a href="/#home" className="link">
-            <Link className="link" to="/"></Link>HOME
-          </a>
+                <a href="/#home" className="link">
+                  <Link className="link" to="/"></Link>HOME
+                </a>
               </MenuItem>
               <MenuItem onClick={handleClose}>
-              <a href="/#portfolio" className="link">
-            <Link className="link" to="/"></Link>PORTFOLIO
-          </a>
+                <a href="/#portfolio" className="link">
+                  <Link className="link" to="/"></Link>PORTFOLIO
+                </a>
               </MenuItem>
               <MenuItem onClick={handleClose}>
-              <a href="/#contato" className="link">
-            <Link className="link" to="/"></Link>CONTATO
-          </a>
+                <a href="/#contato" className="link">
+                  <Link className="link" to="/"></Link>CONTATO
+                </a>
               </MenuItem>
             </Menu>
           </div>
