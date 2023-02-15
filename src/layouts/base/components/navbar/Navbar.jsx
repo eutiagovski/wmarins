@@ -1,10 +1,10 @@
+import "./navbar.scss";
+
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import Button from "@mui/material/Button";
+
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import "./navbar.scss";
-import { useState } from "react";
-import * as React from "react";
 
 const Navbar = () => {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -25,7 +25,7 @@ const Navbar = () => {
           <a href="/#home" className="link">
             <Link className="link" to="/"></Link>{" "}
             <img
-              src={require(`../../public/img/logo-0.png`)}
+              src={require(`../../../../assets/media/images/logo-0.png`)}
               alt=""
               className="logo"
             />

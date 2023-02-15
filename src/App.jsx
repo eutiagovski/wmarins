@@ -1,32 +1,38 @@
-import "./styles/app.scss";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./assets/styles/app.scss";
+import { Routes, Route, Navigate } from "react-router-dom";
 
-import Navbar from "./components/navbar/Navbar";
-import Footer from "./components/footer/Footer";
-
-import Home from "./pages/home/Home";
-import ProjectDetails from "./pages/projects/ProjectDetails";
-import About from "./pages/about/About";
+import { routes } from "./routes";
 import ScrollToTop from "./scrollToTop";
 
 function App() {
+  const getRoutes = (allRoutes) =>
+    allRoutes.map((route) => {
+      if (route.collapse) {
+        return getRoutes(route.collapse);
+      }
+
+      if (route.route) {
+        return (
+          <Route
+            exact
+            path={route.route}
+            // element={<RequireAuth>{route.component}</RequireAuth>} // This will be used in the future
+            element={route.component}
+            key={route.name}
+          />
+        );
+      }
+
+      return null;
+    });
+
   return (
     <>
-      <BrowserRouter>
-        <Navbar />
-        <ScrollToTop />
-
-        <Routes>
-          <Route path="/" exact>
-            <Route path="" element={<Home />} />
-            <Route path="projetos" exact>
-              <Route path=":id" element={<ProjectDetails />} />
-            </Route>
-            <Route path="sobre" element={<About />} />
-          </Route>
-        </Routes>
-        <Footer />
-      </BrowserRouter>
+      <Routes>
+        {getRoutes(routes)}
+        <Route path="*" element={<Navigate to="/" />} />
+      </Routes>
+      <ScrollToTop />
     </>
   );
 }

@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="footer-container">
         <div className="left">
           <img
-            src={require(`../../public/img/logo-0.png`)}
+            src={require(`../../../../assets/media/images/logo-0.png`)}
             alt=""
             className="logo"
           />

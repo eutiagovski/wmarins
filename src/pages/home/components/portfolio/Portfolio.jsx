@@ -19,6 +19,7 @@ const Portfolio = () => {
 
   useEffect(() => {
     var listImages = [];
+    
     portfolio.map((item) => {
       item.images.map((image) => {
         listImages.push({ title: item.title, img: image.path, id: item.id });
@@ -28,8 +29,8 @@ const Portfolio = () => {
   }, []);
 
   const handleNavigate = (id) => {
-    console.log(id)
-    navigate(`/projetos/${id}`)
+    document.body.scrollTop = 0;
+    navigate(`/projeto/${id}`)
   };
 
   return (
@@ -48,8 +49,8 @@ const Portfolio = () => {
                 .map((item, index) => (
                   <ImageListItem key={index}>
                     <img
-                      src={`${require(`../../../../public/img/${item.img}`)}?w=248&fit=crop&auto=format`}
-                      srcSet={`${require(`../../../../public/img/${item.img}`)}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                      src={`${require(`../../../../assets/media/images/${item.img}`)}?w=248&fit=crop&auto=format`}
+                      srcSet={`${require(`../../../../assets/media/images/${item.img}`)}?w=248&fit=crop&auto=format&dpr=2 2x`}
                       alt={item.title}
                       // loading="lazy"
                     />

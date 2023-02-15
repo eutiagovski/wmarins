@@ -1,11 +1,14 @@
+import BaseLayout from "../../layouts/base/BaseLayout";
 import Header from "./components/header/Header";
 import Portfolio from "./components/portfolio/Portfolio";
 
 const Home = () => {
   return (
     <>
-      <Header />
-      <Portfolio />
+      <BaseLayout>
+        <Header />
+        <Portfolio />
+      </BaseLayout>
     </>
   );
 };
