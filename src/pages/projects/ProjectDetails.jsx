@@ -1,6 +1,6 @@
 import React from "react";
 import "./projects.scss";
-import { portfolio } from "../../components/portfolio/portfolioList";
+import { portfolio } from "../../portfolioList";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import { useNavigate } from "react-router-dom";
@@ -9,7 +9,6 @@ const ProjectDetails = () => {
   const pageId = window.location.href.split("/")[4];
   const details = portfolio.filter((portfolio) => portfolio.id == pageId)[0];
   const navigate = useNavigate();
-
 
   const handleForward = (e) => {
     e.preventDefault();

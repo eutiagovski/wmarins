@@ -5,7 +5,7 @@ const Header = () => {
     <div className="header" id='home'>
         <div className="header-container">
             <span><div className="purple">marins</div>wallace</span>
-            <span>2022</span>
+            <span>{new Date().getFullYear()}</span>
         </div>
     </div>
   )

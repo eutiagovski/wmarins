@@ -1,7 +1,7 @@
 import "./portfolio.scss";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { portfolio } from "./portfolioList";
 
@@ -48,8 +48,8 @@ const Portfolio = () => {
                 .map((item, index) => (
                   <ImageListItem key={index}>
                     <img
-                      src={`${require(`../../public/img/${item.img}`)}?w=248&fit=crop&auto=format`}
-                      srcSet={`${require(`../../public/img/${item.img}`)}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                      src={`${require(`../../../../public/img/${item.img}`)}?w=248&fit=crop&auto=format`}
+                      srcSet={`${require(`../../../../public/img/${item.img}`)}?w=248&fit=crop&auto=format&dpr=2 2x`}
                       alt={item.title}
                       // loading="lazy"
                     />
