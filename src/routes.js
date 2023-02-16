@@ -1,3 +1,4 @@
+import MaterialLayout from "./layouts/material/MaterialLayout";
 import Home from "./pages/home/Home";
 import ProjectDetails from "./pages/projects/ProjectDetails";
 
@@ -7,6 +8,12 @@ export const routes = [
     route: "/",
     alias: "Início",
     component: <Home />,
+  },
+  {
+    name: "home",
+    route: "home",
+    alias: "Início",
+    component: <MaterialLayout />,
   },
   {
     name: "projects",

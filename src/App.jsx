@@ -3,6 +3,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 
 import { routes } from "./routes";
 import ScrollToTop from "./scrollToTop";
+import { CssBaseline } from "@mui/material";
 
 function App() {
   const getRoutes = (allRoutes) =>
@@ -28,6 +29,7 @@ function App() {
 
   return (
     <>
+      <CssBaseline />
       <Routes>
         {getRoutes(routes)}
         <Route path="*" element={<Navigate to="/" />} />
